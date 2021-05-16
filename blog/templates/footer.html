@@ -1,0 +1,14 @@
+ {% for c in Company %}
+    <div class="container">
+
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Contact us </h1>
+            <p>{{ c.company_name }}</p>
+            <p>{{ c.company_email }}</p>
+            <p>{{ c.company_phone }}</p>
+            <p>{{ c.company_address }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

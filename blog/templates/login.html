@@ -1,0 +1,21 @@
+{% include 'navbar.html' %}
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-lg-4 col-lg-offset-4">
+        <h4>Please Login below</h4>
+        <form action="/login" method="post" class="form-group">
+            {% csrf_token %}
+         <h3>ID <input required type="text" name="id" id="id" class="form-group"></h3>
+        <h3>Name <input type="text" name="Name" class="form-group"></h3>
+        <h3>Address <input type="text" name="Address" class="form-group"></h3>
+        <h3>Email<input type="text" name="Email" class="form-group"></h3>
+         <h4>Phone</h4><input type="text" name="Phone" class="form-group"></h3>
+        <input type="submit" id="btn" class="btn bg-light rounded">
+
+    </form>
+    </div>
+</div>
+</div>
+
+{% endblock %}

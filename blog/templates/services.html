@@ -1,0 +1,43 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+
+
+
+
+
+   <div class="container">
+       <h1 class="my-2 ml-2 text-dark  ">Our Services</h1><br>
+      <div class="row mt-4">
+
+{% for s in services %}
+            <div class="col-md-3 my-2 bg-secondary m-3 ">
+            <div class="mb-5 mt-5">
+            <h2 class="section-head text-white mb-5"> {{ s.type }}</h2>
+
+                    <h3 class="text-white">{{ s.name }}</h3>
+                    <h6  class="text-white" >{{ s.des  }}</h6>
+
+            </div>
+            </div>
+
+{% endfor %}
+
+<div class="container my-5">
+<div class="row ">
+    <h4 class="text-dark mb-2">Meet our team</h4>
+<div class="col-md-8 mt-3">
+  <h class>Our team consits of highly skilled engineers who have done a lot of project and has real good Experince
+      Our team consits of highly skilled engineers who have done a lot of project and has real good Experince
+      Our team consits of highly skilled engineers who have done a lot of project and has real good Experince
+      Our team consits of highly skilled engineers who have done a lot of project and has real good Experince
+      Our team consits of highly skilled engineers who have done a lot of project and has real good Experince . </h>
+<p> </p>
+</div>
+</div>
+
+    </div>
+
+
+
+{% endblock content %}

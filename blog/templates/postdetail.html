@@ -1,0 +1,27 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+    <main id="main">
+        <div class="container">
+            <div class="row">
+                <div  class="col-md-8">
+                    <h1 class="mt-3 ">{{ post.title }}</h1>
+                    <img class="card-img-top mt-4" src="{{ post.image.url }}">
+
+                <small>Posted at {{ post.date_added }}</small>
+                <p>
+
+                    <strong>
+                    {{ post.body }}
+                        </strong>
+                </p>
+                  <p>{{ post.body }}</p>
+
+                <div>
+
+            </div>
+        </div>
+
+    </main>
+
+{% endblock content %}

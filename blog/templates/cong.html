@@ -1,0 +1,33 @@
+{% include 'navbar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-lg-4 col-lg-offset-4">
+        <h4>Please Login below</h4>
+        <div class="container border-primary">
+              <form action="/login" method="post" class="form-group">
+            {% csrf_token %}
+         <h3>ID <input required type="text" name="id" id="id" class="form-group"></h3>
+        <h3>Name <input type="text" name="Name" class="form-group"></h3>
+        <h3>Address <input type="text" name="Address" class="form-group"></h3>
+        <h3>Email<input type="text" name="Email" class="form-group"></h3>
+         <h4>Phone</h4><input type="text" name="Phone" class="form-group"></h3><br>
+        <input type="submit" id="btn" class="btn bg-primary rounded m-4">
+
+    </form>
+             </div>
+
+    </div>
+</div>
+</div>
+{% endblock %}
+
+</body>
+</html>
